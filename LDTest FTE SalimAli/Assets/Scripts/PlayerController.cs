@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour
         }
 
         // Jump
-        if (hangCounter > 0 && jumpBufferCount > 0 && isGrounded && rb.velocity.y == 0f)
+        if (hangCounter > 0 && jumpBufferCount > 0 && isGrounded && rb.velocity.y == 0f) // grounded and velocity check remove hangtime but temporarily here to solve jump bug
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpVelocity);
             hangCounter = 0;
