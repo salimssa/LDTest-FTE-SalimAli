@@ -15,20 +15,21 @@ public class PlayerController : MonoBehaviour
 
     public float jumpVelocity = 10.0f;
 
-
     public float fallMultiplier = 3f;
     public float lowJumpMultiplier = 6f;
     public float jumpHeldMultiplier = 2f;
-    public float hangTime = 0.2f;
-    private float hangCounter;
-    public float jumpBufferLength = 0.1f;
-    private float jumpBufferCount;
     public bool applyJumpHeldMult { get; set; } = false;
-
 
     private bool isGrounded = false;
     public float groundCheckDist;
     public Transform feetPos;
+    public LayerMask ground;
+
+
+    public float hangTime = 0.2f;
+    private float hangCounter;
+    public float jumpBufferLength = 0.1f;
+    private float jumpBufferCount;
 
 
     void Start()
@@ -38,10 +39,10 @@ public class PlayerController : MonoBehaviour
 
     void GroundCheck()
     {
-        if (Physics.Raycast(feetPos.position, Vector3.down, groundCheckDist))
-        {
-            isGrounded = true;
-        }
+        float radius = GetComponent<CapsuleCollider>().radius * 0.75f;
+        Vector3 pos = feetPos.transform.position;
+        isGrounded = Physics.CheckSphere(pos, radius, ground);
+
     }
 
 
@@ -64,23 +65,16 @@ public class PlayerController : MonoBehaviour
 
         rb.velocity = new Vector3(horizontalVelocity, rb.velocity.y, rb.velocity.z);
 
+        if (rb.velocity.y < 0)
+        { rb.velocity += Vector3.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime; }
+        else if (rb.velocity.y > 0 && Input.GetButton("Jump") && applyJumpHeldMult)
+        { rb.velocity += Vector3.up * Physics.gravity.y * (jumpHeldMultiplier - 1) * Time.deltaTime; }
+        else
+        { rb.velocity += Vector3.up * Physics.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime; }
 
-
-
-        GroundCheck();
-
-        if (!isGrounded)
-        {
-            if (rb.velocity.y < 0)
-            { rb.velocity += Vector3.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime; }
-            else if (rb.velocity.y > 0 && Input.GetButton("Jump") && applyJumpHeldMult)
-            { rb.velocity += Vector3.up * Physics.gravity.y * (jumpHeldMultiplier - 1) * Time.deltaTime; }
-            else
-            { rb.velocity += Vector3.up * Physics.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime; }
-        }
-
+        /* WIP to add hang time and jump buffer -> needs more polish and bug killing
         // Jump
-        if (hangCounter > 0 && jumpBufferCount > 0 && isGrounded && rb.velocity.y == 0f) // grounded and velocity check remove hangtime but temporarily here to solve jump bug
+        if (hangCounter > 0 && jumpBufferCount > 0)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpVelocity);
             hangCounter = 0;
@@ -88,11 +82,17 @@ public class PlayerController : MonoBehaviour
             isGrounded = false;
             applyJumpHeldMult = true;
         }
+        */
+
+        GroundCheck();
+        Debug.Log(isGrounded);
 
     }
 
     void Update()
     {
+
+        /* WIP to add hang time and jump buffer -> needs more polish and bug killing
         // Jump hang time
         if (isGrounded) { hangCounter = hangTime; }
         else { hangCounter -= Time.deltaTime; }
@@ -103,15 +103,32 @@ public class PlayerController : MonoBehaviour
             jumpBufferCount = jumpBufferLength;
         }
         else
+        if (Input.GetButtonDown("Jump") && isGrounded && rb.velocity.y == 0f)
         {
             jumpBufferCount -= Time.deltaTime;
+            rb.velocity = new Vector2(rb.velocity.x, jumpVelocity);
+            isGrounded = false;
+            applyJumpHeldMult = true;
         }
 
         if (Input.GetButtonUp("Jump") && applyJumpHeldMult)
         {
             applyJumpHeldMult = false;
         }
+        */
 
+        if (Input.GetButtonDown("Jump") && isGrounded && rb.velocity.y == 0f)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpVelocity);
+            isGrounded = false;
+            applyJumpHeldMult = true;
+        }
+
+        if (Input.GetButtonUp("Jump") && applyJumpHeldMult)
+        {
+            applyJumpHeldMult = false;
+        }
+        
     }
 
 }
