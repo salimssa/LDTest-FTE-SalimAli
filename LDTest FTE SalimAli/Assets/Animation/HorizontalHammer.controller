@@ -6,7 +6,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Hammer
+  m_Name: HorizontalHammer
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
@@ -46,7 +46,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 600, y: 0, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 5734073286415664162}
+  m_DefaultState: {fileID: 2441445159564923858}
 --- !u!1102 &2441445159564923858
 AnimatorState:
   serializedVersion: 6
