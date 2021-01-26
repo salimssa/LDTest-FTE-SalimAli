@@ -1050,54 +1050,54 @@ MonoBehaviour:
   m_SharedTextures: []
   m_Positions:
   - {x: -16.5, y: 17.499998, z: 5}
-  - {x: -4.5, y: 17.499998, z: 5}
+  - {x: 28.5, y: 17.499998, z: 5}
   - {x: -16.5, y: 26.999998, z: 5}
-  - {x: -4.5, y: 26.999998, z: 5}
-  - {x: -4.5, y: 17.499998, z: 5}
-  - {x: -4.5, y: 17.499998, z: -5}
-  - {x: -4.5, y: 26.999998, z: 5}
-  - {x: -4.5, y: 26.999998, z: -5}
-  - {x: -4.5, y: 17.499998, z: -5}
+  - {x: 28.5, y: 26.999998, z: 5}
+  - {x: 28.5, y: 17.499998, z: 5}
+  - {x: 28.5, y: 17.499998, z: -5}
+  - {x: 28.5, y: 26.999998, z: 5}
+  - {x: 28.5, y: 26.999998, z: -5}
+  - {x: 28.5, y: 17.499998, z: -5}
   - {x: -16.5, y: 17.499998, z: -5}
-  - {x: -4.5, y: 26.999998, z: -5}
+  - {x: 28.5, y: 26.999998, z: -5}
   - {x: -16.5, y: 26.999998, z: -5}
   - {x: -16.5, y: 17.499998, z: -5}
   - {x: -16.5, y: 17.499998, z: 5}
   - {x: -16.5, y: 26.999998, z: -5}
   - {x: -16.5, y: 26.999998, z: 5}
   - {x: -16.5, y: 26.999998, z: 5}
-  - {x: -4.5, y: 26.999998, z: 5}
+  - {x: 28.5, y: 26.999998, z: 5}
   - {x: -16.5, y: 26.999998, z: -5}
-  - {x: -4.5, y: 26.999998, z: -5}
+  - {x: 28.5, y: 26.999998, z: -5}
   - {x: -16.5, y: 17.499998, z: -5}
-  - {x: -4.5, y: 17.499998, z: -5}
+  - {x: 28.5, y: 17.499998, z: -5}
   - {x: -16.5, y: 17.499998, z: 5}
-  - {x: -4.5, y: 17.499998, z: 5}
+  - {x: 28.5, y: 17.499998, z: 5}
   m_Textures0:
   - {x: 16.5, y: 17.499998}
-  - {x: 4.5, y: 17.499998}
+  - {x: -28.5, y: 17.499998}
   - {x: 16.5, y: 26.999998}
-  - {x: 4.5, y: 26.999998}
+  - {x: -28.5, y: 26.999998}
   - {x: 5, y: 17.499998}
   - {x: -5, y: 17.499998}
   - {x: 5, y: 26.999998}
   - {x: -5, y: 26.999998}
-  - {x: -4.5, y: 17.499998}
+  - {x: 28.5, y: 17.499998}
   - {x: -16.5, y: 17.499998}
-  - {x: -4.5, y: 26.999998}
+  - {x: 28.5, y: 26.999998}
   - {x: -16.5, y: 26.999998}
   - {x: 5, y: 17.499998}
   - {x: -5, y: 17.499998}
   - {x: 5, y: 26.999998}
   - {x: -5, y: 26.999998}
   - {x: -16.5, y: 5}
-  - {x: -4.5, y: 5}
+  - {x: 28.5, y: 5}
   - {x: -16.5, y: -5}
-  - {x: -4.5, y: -5}
+  - {x: 28.5, y: -5}
   - {x: 16.5, y: -5}
-  - {x: 4.5, y: -5}
+  - {x: -28.5, y: -5}
   - {x: 16.5, y: 5}
-  - {x: 4.5, y: 5}
+  - {x: -28.5, y: 5}
   m_Textures2: []
   m_Textures3: []
   m_Tangents:
@@ -40097,7 +40097,7 @@ GameObject:
   - component: {fileID: 938982554}
   m_Layer: 7
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40216,7 +40216,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 938982553}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 115.15, y: -22.32, z: 0}
+  m_LocalPosition: {x: 68, y: 22.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1447031164}
@@ -41635,7 +41635,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 118.15, y: -19.32, z: -25}
+  m_LocalPosition: {x: 83, y: 22.6, z: -41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1803014161}
@@ -61060,8 +61060,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 24
     localAABB:
-      m_Center: {x: -10.5, y: 22.249998, z: 0}
-      m_Extent: {x: 6, y: 4.75, z: 5}
+      m_Center: {x: 6, y: 22.249998, z: 0}
+      m_Extent: {x: 22.5, y: 4.75, z: 5}
   m_Shapes:
     vertices: []
     shapes: []
@@ -61140,7 +61140,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 1152
-    _typelessdata: 000084c1ffff8b410000a04000000000000000000000803f000080bf0000000000000000000080bf00008441ffff8b41000090c0ffff8b410000a04000000000000000000000803f000080bf0000000000000000000080bf00009040ffff8b41000084c1ffffd7410000a04000000000000000000000803f000080bf0000000000000000000080bf00008441ffffd741000090c0ffffd7410000a04000000000000000000000803f000080bf0000000000000000000080bf00009040ffffd741000090c0ffff8b410000a0400000803f000000000000000000000000000000000000803f000080bf0000a040ffff8b41000090c0ffff8b410000a0c00000803f000000000000000000000000000000000000803f000080bf0000a0c0ffff8b41000090c0ffffd7410000a0400000803f000000000000000000000000000000000000803f000080bf0000a040ffffd741000090c0ffffd7410000a0c00000803f000000000000000000000000000000000000803f000080bf0000a0c0ffffd741000090c0ffff8b410000a0c00000000000000000000080bf0000803f0000000000000000000080bf000090c0ffff8b41000084c1ffff8b410000a0c00000000000000000000080bf0000803f0000000000000000000080bf000084c1ffff8b41000090c0ffffd7410000a0c00000000000000000000080bf0000803f0000000000000000000080bf000090c0ffffd741000084c1ffffd7410000a0c00000000000000000000080bf0000803f0000000000000000000080bf000084c1ffffd741000084c1ffff8b410000a0c0000080bf00000000000000000000000000000000000080bf000080bf0000a040ffff8b41000084c1ffff8b410000a040000080bf00000000000000000000000000000000000080bf000080bf0000a0c0ffff8b41000084c1ffffd7410000a0c0000080bf00000000000000000000000000000000000080bf000080bf0000a040ffffd741000084c1ffffd7410000a040000080bf00000000000000000000000000000000000080bf000080bf0000a0c0ffffd741000084c1ffffd7410000a040000000000000803f000000000000803f0000000000000000000080bf000084c10000a040000090c0ffffd7410000a040000000000000803f000000000000803f0000000000000000000080bf000090c00000a040000084c1ffffd7410000a0c0000000000000803f000000000000803f0000000000000000000080bf000084c10000a0c0000090c0ffffd7410000a0c0000000000000803f000000000000803f0000000000000000000080bf000090c00000a0c0000084c1ffff8b410000a0c000000000000080bf00000000000080bf0000000000000000000080bf000084410000a0c0000090c0ffff8b410000a0c000000000000080bf00000000000080bf0000000000000000000080bf000090400000a0c0000084c1ffff8b410000a04000000000000080bf00000000000080bf0000000000000000000080bf000084410000a040000090c0ffff8b410000a04000000000000080bf00000000000080bf0000000000000000000080bf000090400000a040
+    _typelessdata: 000084c1ffff8b410000a04000000000000000000000803f000080bf0000000000000000000080bf00008441ffff8b410000e441ffff8b410000a04000000000000000000000803f000080bf0000000000000000000080bf0000e4c1ffff8b41000084c1ffffd7410000a04000000000000000000000803f000080bf0000000000000000000080bf00008441ffffd7410000e441ffffd7410000a04000000000000000000000803f000080bf0000000000000000000080bf0000e4c1ffffd7410000e441ffff8b410000a0400000803f000000000000000000000000000000000000803f000080bf0000a040ffff8b410000e441ffff8b410000a0c00000803f000000000000000000000000000000000000803f000080bf0000a0c0ffff8b410000e441ffffd7410000a0400000803f000000000000000000000000000000000000803f000080bf0000a040ffffd7410000e441ffffd7410000a0c00000803f000000000000000000000000000000000000803f000080bf0000a0c0ffffd7410000e441ffff8b410000a0c00000000000000000000080bf0000803f0000000000000000000080bf0000e441ffff8b41000084c1ffff8b410000a0c00000000000000000000080bf0000803f0000000000000000000080bf000084c1ffff8b410000e441ffffd7410000a0c00000000000000000000080bf0000803f0000000000000000000080bf0000e441ffffd741000084c1ffffd7410000a0c00000000000000000000080bf0000803f0000000000000000000080bf000084c1ffffd741000084c1ffff8b410000a0c0000080bf00000000000000000000000000000000000080bf000080bf0000a040ffff8b41000084c1ffff8b410000a040000080bf00000000000000000000000000000000000080bf000080bf0000a0c0ffff8b41000084c1ffffd7410000a0c0000080bf00000000000000000000000000000000000080bf000080bf0000a040ffffd741000084c1ffffd7410000a040000080bf00000000000000000000000000000000000080bf000080bf0000a0c0ffffd741000084c1ffffd7410000a040000000000000803f000000000000803f0000000000000000000080bf000084c10000a0400000e441ffffd7410000a040000000000000803f000000000000803f0000000000000000000080bf0000e4410000a040000084c1ffffd7410000a0c0000000000000803f000000000000803f0000000000000000000080bf000084c10000a0c00000e441ffffd7410000a0c0000000000000803f000000000000803f0000000000000000000080bf0000e4410000a0c0000084c1ffff8b410000a0c000000000000080bf00000000000080bf0000000000000000000080bf000084410000a0c00000e441ffff8b410000a0c000000000000080bf00000000000080bf0000000000000000000080bf0000e4c10000a0c0000084c1ffff8b410000a04000000000000080bf00000000000080bf0000000000000000000080bf000084410000a0400000e441ffff8b410000a04000000000000080bf00000000000080bf0000000000000000000080bf0000e4c10000a040
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -61194,8 +61194,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: -10.5, y: 22.249998, z: 0}
-    m_Extent: {x: 6, y: 4.75, z: 5}
+    m_Center: {x: 6, y: 22.249998, z: 0}
+    m_Extent: {x: 22.5, y: 4.75, z: 5}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
@@ -64316,7 +64316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 3, y: 3, z: -15}
+  m_TrackedObjectOffset: {x: 15, y: 0, z: -40}
   m_LookaheadTime: 0.35
   m_LookaheadSmoothing: 0.25
   m_LookaheadIgnoreY: 0
@@ -64326,7 +64326,7 @@ MonoBehaviour:
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
-  m_CameraDistance: 10
+  m_CameraDistance: 1
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
@@ -69541,8 +69541,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1789613545}
   - component: {fileID: 1789613544}
+  - component: {fileID: 1789613546}
   m_Layer: 0
-  m_Name: EventManager
+  m_Name: CameraTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69557,9 +69558,39 @@ MonoBehaviour:
   m_GameObject: {fileID: 1789613543}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 204f923a84e48ad46a18d46f2347250d, type: 3}
+  m_Script: {fileID: 11500000, guid: fd61f3f871a3fd5429244af8be8c5dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisTriggerEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1803014162}
+        m_TargetAssemblyTypeName: CameraMotion, Assembly-CSharp
+        m_MethodName: ZoomOut
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  thisTriggerExit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1803014162}
+        m_TargetAssemblyTypeName: CameraMotion, Assembly-CSharp
+        m_MethodName: ZoomIn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1789613545
 Transform:
   m_ObjectHideFlags: 0
@@ -69568,12 +69599,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1789613543}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 92.32743, y: 15.203233, z: -11.584301}
+  m_LocalPosition: {x: 130, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1789613546
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789613543}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 100, y: 100, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1802782658
 GameObject:
   m_ObjectHideFlags: 0
@@ -69614,6 +69658,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1803014161}
   - component: {fileID: 1803014160}
+  - component: {fileID: 1803014162}
   m_Layer: 0
   m_Name: CM vcam main
   m_TagString: Untagged
@@ -69671,6 +69716,20 @@ Transform:
   m_Father: {fileID: 963194228}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1803014162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803014159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b99802507e079342b28a20d22b1c395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomInOffset: {x: 3, y: 3, z: -25}
+  zoomOutOffset: {x: 15, y: 0, z: -40}
 --- !u!1 &1803646047
 GameObject:
   m_ObjectHideFlags: 0
