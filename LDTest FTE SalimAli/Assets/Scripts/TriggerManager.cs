@@ -7,6 +7,7 @@ public class TriggerManager : MonoBehaviour
 {
     [SerializeField] private UnityEvent thisTriggerEnter;
     [SerializeField] private UnityEvent thisTriggerExit;
+    [SerializeField] private UnityEvent thisTriggerInteract;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -22,6 +23,18 @@ public class TriggerManager : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             thisTriggerExit.Invoke();
+        }
+
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                thisTriggerInteract.Invoke();
+            }
         }
 
     }
