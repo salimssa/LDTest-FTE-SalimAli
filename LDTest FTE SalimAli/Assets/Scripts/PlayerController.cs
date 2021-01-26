@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-
     private Rigidbody rb;
     public float speed = 10;
 
@@ -45,7 +46,24 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Death"))
+        {
+            // Add checkpoints
+            SceneManager.LoadScene(0);
+        }
 
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Death"))
+        {
+            // Add checkpoints
+            SceneManager.LoadScene(0);
+        }
+    }
 
     void FixedUpdate()
     {
