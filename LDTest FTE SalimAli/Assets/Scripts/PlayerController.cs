@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rb;
     public float speed = 10;
 
+    private GameManager gm;
 
     private float moveInput = 0;
     public float horizontalDampingBasic;
@@ -36,6 +37,8 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+        transform.position = gm.lastCheckPointPos;
         rb = GetComponent<Rigidbody>();
     }
 
@@ -148,7 +151,8 @@ public class PlayerController : MonoBehaviour
         {
             applyJumpHeldMult = false;
         }
-        
+
+
     }
 
 }

@@ -7,16 +7,18 @@ public class Gate : MonoBehaviour
     public enum OpenOn {Left, Right};
     public OpenOn sideOpen;
 
-    public KeyCode testSwitch;
+    //public KeyCode testSwitch;
 
 
     // Update is called once per frame
     void Update()
     {
+        /*
         if (Input.GetKeyDown(testSwitch))
         {
             SwitchState();
         }
+        */
     }
 
 
