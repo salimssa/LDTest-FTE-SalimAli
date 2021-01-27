@@ -7,6 +7,10 @@ public class BodyDropper : MonoBehaviour
     public Transform spawnPoint;
     public GameObject body;
 
+    public Interactable InteractingSwitch;
+    public bool spawnedBodyAlive = false;
+    private GameObject spawnedBody;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,12 +20,16 @@ public class BodyDropper : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (spawnedBody == null)
+        {
+            spawnedBodyAlive = false;
+        }
     }
 
     public void DropBody()
     {
-        Instantiate(body, spawnPoint.position, Quaternion.identity);
+        spawnedBody = Instantiate(body, spawnPoint.position, Quaternion.identity);
+        spawnedBodyAlive = true;
         Debug.Log("Dropping Body");
     }
 

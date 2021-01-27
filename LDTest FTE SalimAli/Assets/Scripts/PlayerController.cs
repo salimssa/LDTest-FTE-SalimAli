@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rb;
     public float speed = 10;
 
+
     private float moveInput = 0;
     public float horizontalDampingBasic;
     public float horizontalDampingWhenStopping;
@@ -56,6 +57,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Death"))
@@ -64,6 +66,7 @@ public class PlayerController : MonoBehaviour
             SceneManager.LoadScene(0);
         }
     }
+
 
     void FixedUpdate()
     {
@@ -103,9 +106,8 @@ public class PlayerController : MonoBehaviour
         */
 
         GroundCheck();
-        Debug.Log(isGrounded);
-
     }
+
 
     void Update()
     {

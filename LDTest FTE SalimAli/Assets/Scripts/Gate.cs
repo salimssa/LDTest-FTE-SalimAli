@@ -20,7 +20,7 @@ public class Gate : MonoBehaviour
     }
 
 
-    void SwitchState()
+    public void SwitchState()
     {
         if (sideOpen == OpenOn.Left)
         {
