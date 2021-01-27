@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 10;
 
     private GameManager gm;
+    public GameObject hintBox;
 
     private float moveInput = 0;
     public float horizontalDampingBasic;
@@ -150,6 +151,11 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonUp("Jump") && applyJumpHeldMult)
         {
             applyJumpHeldMult = false;
+        }
+
+        if (Input.GetButtonUp("Hint"))
+        {
+            hintBox.SetActive(!hintBox.activeInHierarchy);
         }
 
 
