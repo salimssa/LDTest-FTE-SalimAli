@@ -41,7 +41,21 @@ public class BodySwitch : MonoBehaviour
             cover.SetActive(false);
             isActive = true;
         }
+    }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            isInRange = true;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            isInRange = false;
+        }
     }
 
 }
