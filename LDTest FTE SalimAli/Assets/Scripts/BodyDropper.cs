@@ -7,7 +7,7 @@ public class BodyDropper : MonoBehaviour
     public Transform spawnPoint;
     public GameObject body;
 
-    public Interactable InteractingSwitch;
+    public BodySwitch InteractingSwitch;
     public bool spawnedBodyAlive = false;
     private GameObject spawnedBody;
 
