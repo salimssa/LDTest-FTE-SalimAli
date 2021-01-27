@@ -39,7 +39,7 @@ public class TriggerManager : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetButtonDown("Interact"))
             {
                 thisTriggerInteract.Invoke();
             }

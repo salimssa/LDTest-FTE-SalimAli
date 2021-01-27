@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class Interactable : MonoBehaviour
 {
     public bool isInRange;
-    public KeyCode interactKey;
+    //public KeyCode interactKey;
     public UnityEvent interactAction;
 
     // Start is called before the first frame update
@@ -20,7 +20,7 @@ public class Interactable : MonoBehaviour
     {
         if (isInRange)
         {
-            if (Input.GetKeyDown(interactKey))
+            if (Input.GetButtonDown("Interact"))
             {
                 interactAction.Invoke();
             }

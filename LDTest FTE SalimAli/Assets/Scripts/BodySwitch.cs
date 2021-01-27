@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class BodySwitch : MonoBehaviour
 {
     public bool isInRange;
-    public KeyCode interactKey;
+    //public KeyCode interactKey;
     public UnityEvent interactAction;
 
     public GameObject cover;
@@ -25,7 +25,7 @@ public class BodySwitch : MonoBehaviour
     {
         if (isInRange)
         {
-            if (Input.GetKeyDown(interactKey) && isActive)
+            if (Input.GetButtonDown("Interact") && isActive)
             {
                 interactAction.Invoke();
             }
